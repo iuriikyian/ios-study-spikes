@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D28CB0119CC728400EA576D /* Test03_ManualMemoryManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D28CB0019CC728400EA576D /* Test03_ManualMemoryManagment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4D3CAE2C19CC6015003ED6C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CAE2B19CC6015003ED6C6 /* main.m */; };
 		4D3CAE3419CC60C6003ED6C6 /* Test01_ClassAndInstanceMethodsAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CAE3319CC60C6003ED6C6 /* Test01_ClassAndInstanceMethodsAccess.m */; };
 		4D3CAE3719CC683E003ED6C6 /* Test02_accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CAE3619CC683E003ED6C6 /* Test02_accessors.m */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D28CB0019CC728400EA576D /* Test03_ManualMemoryManagment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test03_ManualMemoryManagment.m; sourceTree = "<group>"; };
 		4D3CAE2819CC6015003ED6C6 /* soc-01-simple-cmdline */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "soc-01-simple-cmdline"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3CAE2B19CC6015003ED6C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D3CAE3219CC60C6003ED6C6 /* Test01_ClassAndInstanceMethodsAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test01_ClassAndInstanceMethodsAccess.h; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				4D3CAE3319CC60C6003ED6C6 /* Test01_ClassAndInstanceMethodsAccess.m */,
 				4D3CAE3519CC683E003ED6C6 /* Test02_accessors.h */,
 				4D3CAE3619CC683E003ED6C6 /* Test02_accessors.m */,
+				4D28CB0019CC728400EA576D /* Test03_ManualMemoryManagment.m */,
 			);
 			path = "soc-01-simple-cmdline";
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			files = (
 				4D3CAE3419CC60C6003ED6C6 /* Test01_ClassAndInstanceMethodsAccess.m in Sources */,
 				4D3CAE3719CC683E003ED6C6 /* Test02_accessors.m in Sources */,
+				4D28CB0119CC728400EA576D /* Test03_ManualMemoryManagment.m in Sources */,
 				4D3CAE2C19CC6015003ED6C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +248,7 @@
 				4D3CAE3119CC6015003ED6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

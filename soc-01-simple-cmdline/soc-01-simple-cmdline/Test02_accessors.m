@@ -9,6 +9,9 @@
 #import "Test02_accessors.h"
 
 @implementation Test02_accessors
+{
+    int _a;
+}
 
 - (void) setA: (int)a{
     _a = a;

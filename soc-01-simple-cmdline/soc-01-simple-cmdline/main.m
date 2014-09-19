@@ -10,6 +10,9 @@
 #import "Test01_ClassAndInstanceMethodsAccess.h"
 #import "Test02_accessors.h"
 
+
+void manual_memory_management_test(); // forward declaration for //#import "Test03_ManualMemoryManagment.m"
+
 void methods_access_test(){
     Test01_ClassAndInstanceMethodsAccess* mc = [Test01_ClassAndInstanceMethodsAccess new];
     
@@ -56,7 +59,8 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
         //methods_access_test();
-        test_accessors();
+        //test_accessors();
+        manual_memory_management_test();
     }
     return 0;
 }

@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface Test02_accessors : NSObject
-{
-    int _a;
-}
+// alternative place for member variables declaration
+// other place : implementation of the interface
+//{
+//    int _a;
+//}
 
 - (void) setA: (int)a;
 - (int) a;
