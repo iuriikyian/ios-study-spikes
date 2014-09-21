@@ -10,10 +10,23 @@
 
 @interface MemTestClass : NSObject
 
+- (id) init;
+- (void) dealloc;
 @end
 
 @implementation MemTestClass
 
+- (id) init {
+    if(self = [super init]){
+        NSLog(@"init() called");
+    }
+    return self;
+}
+
+- (void) dealloc{
+    NSLog(@"dealloc() called");
+    [super dealloc];
+}
 @end
 
 void manual_memory_management_test(){

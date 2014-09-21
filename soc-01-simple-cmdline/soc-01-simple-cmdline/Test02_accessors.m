@@ -13,6 +13,8 @@
     int _a;
 }
 
+@synthesize b = _b;
+
 - (void) setA: (int)a{
     _a = a;
 }
@@ -25,7 +27,7 @@
 };
 
 - (void) info{
-    NSLog(@"content: a = %d", _a);
+    NSLog(@"content: a = %d, b = %d", _a, _b);
 }
 
 @end

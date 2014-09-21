@@ -21,4 +21,6 @@
 
 - (void) info;
 
+@property int b;
+
 @end

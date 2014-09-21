@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:soc-02-single-view-app/soc-02-single-view-app.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:soc-01-simple-cmdline/soc-01-simple-cmdline.xcodeproj">
    </FileRef>
 </Workspace>

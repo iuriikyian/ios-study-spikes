@@ -39,6 +39,23 @@ void methods_access_test(){
     
     // 7. call private class method (provided only in class implementation) for the class
     [Test01_ClassAndInstanceMethodsAccess call_goo_private];
+    
+    // 8. check private selector presence
+
+    SEL privateMethodSelector = NSSelectorFromString(@"foo_private");
+    if([mc respondsToSelector: privateMethodSelector] == YES){
+        NSLog(@"can response to selector foo_private");
+    }
+    
+    // compile time definistion of selector with suppressing the warning
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL privateMethodSelector2 = @selector(goo_private);
+    #pragma clang diagnostic pop
+    
+    if([Test01_ClassAndInstanceMethodsAccess respondsToSelector: privateMethodSelector2] == YES){
+        NSLog(@"can response to selector goo_private");
+    }
 }
 
 void test_accessors(){
@@ -52,15 +69,21 @@ void test_accessors(){
     int* pc = &c;
     [ta getA: pc];
     NSLog(@"recieved with getA: %d" , c);
+    
+    // properties usage
+    ta.b = 78;
+    [ta info];
+    NSLog(@"property b access: %d", ta.b);
+    
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
-        //methods_access_test();
+        methods_access_test();
         //test_accessors();
-        manual_memory_management_test();
+        //manual_memory_management_test();
     }
     return 0;
 }
