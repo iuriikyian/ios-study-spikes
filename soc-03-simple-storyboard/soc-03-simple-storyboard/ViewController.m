@@ -1,12 +1,16 @@
 //
 //  ViewController.m
-//  soc-02-single-view-app
+//  soc-03-simple-storyboard
 //
-//  Created by Iurii Kyian on 20/09/14.
-//  Copyright (c) 2014 Iurii Kyian. All rights reserved.
+//  Created by finebrain on 26/09/14.
+//  Copyright (c) 2014 IOS Study Spikes. All rights reserved.
 //
 
 #import "ViewController.h"
+
+@interface ViewController ()
+
+@end
 
 @implementation ViewController
 
@@ -20,7 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)testTap:(UIButton *)sender {
-    [self.lbl setText: @"button tapped"];
+- (IBAction)onTouchDown:(UIButton *)sender {
+}
+
+- (IBAction)tap:(id)sender {
+}
+
+- (IBAction)ttt:(id)sender {
+}
+
+- (IBAction)touchDownInside:(id)sender {
 }
 @end

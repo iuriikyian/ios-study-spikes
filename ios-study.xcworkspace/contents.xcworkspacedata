@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:soc-04-tabbed-app/soc-04-tabbed-app.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:soc-03-simple-storyboard/soc-03-simple-storyboard.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:soc-02-single-view-app/soc-02-single-view-app.xcodeproj">
    </FileRef>
    <FileRef
