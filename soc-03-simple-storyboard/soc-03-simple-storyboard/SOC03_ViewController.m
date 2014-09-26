@@ -6,13 +6,9 @@
 //  Copyright (c) 2014 IOS Study Spikes. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SOC03_ViewController.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
+@implementation SOC03_ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,15 +20,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onTouchDown:(UIButton *)sender {
-}
-
-- (IBAction)tap:(id)sender {
-}
-
-- (IBAction)ttt:(id)sender {
-}
-
-- (IBAction)touchDownInside:(id)sender {
+- (IBAction)pgoto2:(id)sender {
+    [self performSegueWithIdentifier:@"view2" sender:sender];
 }
 @end
